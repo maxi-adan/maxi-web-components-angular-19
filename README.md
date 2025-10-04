@@ -1,59 +1,241 @@
-# MaxiAngularComponentsTest
+# Maxi Web Components
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+<div align="center">
+  <img src="public/assets/logo.png" alt="Maxi Web Components Logo" width="300" />
+</div>
 
-## Development server
+<div align="center">
+  <h3>Angular Components Library</h3>
+  <p>A comprehensive collection of reusable UI components for Angular applications</p>
+  
+  ![Angular](https://img.shields.io/badge/Angular-19.2.0-red?style=flat-square&logo=angular)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-blue?style=flat-square&logo=typescript)
+  ![License](https://img.shields.io/badge/License-Private-orange?style=flat-square)
+</div>
 
-To start a local development server, run:
+---
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Components](#components)
+- [Compatibility](#compatibility)
+- [Development](#development)
+- [Contributing](#contributing)
+
+## 🚀 Overview
+
+**Maxi Web Components** is a comprehensive Angular components library designed to provide developers with a complete set of modern, accessible, and customizable UI components. Built specifically for Angular applications, this library offers a consistent design system and seamless integration with Angular's ecosystem.
+
+### Key Highlights
+
+- **Modern Design**: Clean, contemporary UI components following current design trends
+- **Angular Native**: Built specifically for Angular with full TypeScript support
+- **Accessibility First**: WCAG compliant components with proper ARIA attributes
+- **Customizable**: Extensive theming and styling options
+- **Performance Optimized**: Lightweight and efficient components
+- **Type Safe**: Full TypeScript support with comprehensive type definitions
+
+## ✨ Features
+
+- 🎨 **25+ Components** covering all major UI patterns
+- 📱 **Responsive Design** - Mobile-first approach
+- ♿ **Accessibility** - WCAG 2.1 AA compliant
+- 🎯 **TypeScript** - Full type safety and IntelliSense support
+- 🎨 **Theming** - Customizable color schemes and styling
+- 📦 **Tree Shaking** - Import only what you need
+- 🔧 **Angular CLI** - Seamless integration with Angular tooling
+
+## 📦 Installation
 
 ```bash
-ng serve
+npm install maxi-angular-components
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Peer Dependencies
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Make sure you have the required peer dependencies installed:
 
 ```bash
-ng generate component component-name
+npm install @angular/common @angular/core @angular/forms
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🚀 Getting Started
 
+### 1. Import the Module
+
+```typescript
+import { NgModule } from '@angular/core';
+import { MaxiComponentsModule } from 'maxi-angular-components';
+
+@NgModule({
+  imports: [MaxiComponentsModule],
+  // ... other module configuration
+})
+export class AppModule { }
+```
+
+### 2. Use Components
+
+```html
+<!-- Input Field -->
+<maxi-input-field 
+  [placeholder]="'Enter your name'"
+  [required]="true">
+</maxi-input-field>
+
+<!-- Button -->
+<maxi-button 
+  [variant]="'primary'"
+  [size]="'medium'"
+  (click)="onSubmit()">
+  Submit
+</maxi-button>
+
+<!-- Card -->
+<maxi-card [title]="'Sample Card'">
+  <p>Your content here</p>
+</maxi-card>
+```
+
+## 🧩 Components
+
+### Input Components
+- **Input Field** - Text input with validation and styling options
+- **Input Number** - Numeric input with increment/decrement controls
+- **Input Switch** - Toggle switch for boolean values
+- **Radio** - Radio button for single selection
+- **Checkbox** - Checkbox for multiple selections
+- **Autocomplete** - Input with suggestions and filtering
+- **Dropdown** - Select dropdown with search functionality
+- **Multi Select** - Multiple selection dropdown with tags
+- **Calendar** - Date picker with calendar interface
+
+### Navigation Components
+- **Tabs** - Tabbed interface for content organization
+- **Sidebar** - Collapsible navigation sidebar
+- **Paginator** - Pagination controls for data navigation
+
+### Action Components
+- **Button** - Interactive buttons with multiple variants and icons
+- **Chips** - Small tags for labels and selections
+
+### Display Components
+- **Card** - Content container with header, body, and footer
+- **Badge** - Small status indicators and labels
+- **Timeline** - Vertical timeline for events and progress
+- **Table** - Advanced table with sorting, filtering, and pagination
+
+### Feedback Components
+- **Notification** - Toast notifications for user feedback
+- **Tooltip** - Hover tooltips for additional information
+- **Dialog** - Modal dialogs for forms and confirmations
+
+### State Components
+- **Preload** - Loading overlay for page transitions
+- **Skeleton** - Placeholder content while loading
+- **Spinner** - Animated loading spinner
+
+## 🔧 Compatibility
+
+| Angular Version | Library Version | Status |
+|----------------|-----------------|--------|
+| 18.x           | 4.0.10+         | ✅ Supported |
+| 19.x           | 4.0.10+         | ✅ Supported |
+| 20.x           | 4.0.10+         | ✅ Supported |
+
+### Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🛠 Development
+
+### Prerequisites
+
+- Node.js 18+ 
+- Angular CLI 19+
+- npm or yarn
+
+### Setup
+
+1. Clone the repository:
 ```bash
-ng generate --help
+git clone <repository-url>
+cd maxi-angular-components-test
 ```
 
-## Building
-
-To build the project run:
-
+2. Install dependencies:
 ```bash
-ng build
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+3. Start the development server:
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+4. Open your browser and navigate to `http://localhost:4200`
 
-For end-to-end (e2e) testing, run:
+### Available Scripts
 
-```bash
-ng e2e
+- `npm start` - Start development server
+- `npm run build` - Build the project for production
+- `npm run watch` - Build and watch for changes
+- `npm test` - Run unit tests
+
+### Project Structure
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   └── maxi/           # Component implementations
+│   │       ├── button/
+│   │       ├── input-field/
+│   │       ├── card/
+│   │       └── ...
+│   ├── app.component.html  # Main demo page
+│   └── app.component.ts    # App component
+├── public/
+│   └── assets/             # Static assets
+└── styles.css              # Global styles
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🤝 Contributing
 
-## Additional Resources
+We welcome contributions to improve Maxi Web Components! Here's how you can help:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add some amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### Development Guidelines
+
+- Follow Angular style guide
+- Write comprehensive tests
+- Update documentation
+- Ensure accessibility compliance
+- Maintain backward compatibility
+
+## 📄 License
+
+This project is private and proprietary. All rights reserved.
+
+## 📞 Support
+
+For support, questions, or feature requests, please contact our maxi development team.
+
+---
+
+<div align="center">
+  <p>Built with ❤️ by the Maxi Team</p>
+  <p>© 2025 Maxi Web Components. All rights reserved.</p>
+</div>
