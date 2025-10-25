@@ -158,9 +158,9 @@ export class AppModule { }
 
 | Angular Version | Library Version | Status |
 |----------------|-----------------|--------|
-| 18.x           | 4.0.10+         | ✅ Supported |
-| 19.x           | 4.0.10+         | ✅ Supported |
-| 20.x           | 4.0.10+         | ✅ Supported |
+| 18.x           | 4.0.12+         | ✅ Supported |
+| 19.x           | 4.0.12+         | ✅ Supported |
+| 20.x           | 4.0.12+         | ✅ Supported |
 
 ### Browser Support
 
