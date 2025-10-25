@@ -131,7 +131,6 @@ export class AppModule { }
 - **Tabs** - Tabbed interface for content organization
 - **Sidebar** - Collapsible navigation sidebar
 - **Paginator** - Pagination controls for data navigation
-- **Accordion** - Collapsible content sections with expand/collapse functionality and custom headers
 - **Cascade Menu** - Hierarchical dropdown menu with nested navigation, icons, and actions
 
 ### Action Components
@@ -143,6 +142,7 @@ export class AppModule { }
 - **Badge** - Small status indicators and labels
 - **Timeline** - Vertical timeline for events and progress
 - **Table** - Advanced table with sorting, filtering, and pagination
+- **Accordion** - Collapsible content sections with expand/collapse functionality and custom headers
 
 ### Feedback Components
 - **Notification** - Toast notifications for user feedback
