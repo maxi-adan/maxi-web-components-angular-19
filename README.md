@@ -41,7 +41,7 @@
 
 ## ✨ Features
 
-- 🎨 **25+ Components** covering all major UI patterns
+- 🎨 **27+ Components** covering all major UI patterns
 - 📱 **Responsive Design** - Mobile-first approach
 - ♿ **Accessibility** - WCAG 2.1 AA compliant
 - 🎯 **TypeScript** - Full type safety and IntelliSense support
@@ -99,6 +99,19 @@ export class AppModule { }
 <maxi-card [title]="'Sample Card'">
   <p>Your content here</p>
 </maxi-card>
+
+<!-- Accordion -->
+<maxi-accordion 
+  [data]="accordionData"
+  [multiple]="true"
+  (tabChange)="handleTabChange($event)">
+</maxi-accordion>
+
+<!-- Cascade Menu -->
+<maxi-cascade-menu 
+  [data]="menuData"
+  [trigger]="'click'">
+</maxi-cascade-menu>
 ```
 
 ## 🧩 Components
@@ -118,6 +131,8 @@ export class AppModule { }
 - **Tabs** - Tabbed interface for content organization
 - **Sidebar** - Collapsible navigation sidebar
 - **Paginator** - Pagination controls for data navigation
+- **Accordion** - Collapsible content sections with expand/collapse functionality and custom headers
+- **Cascade Menu** - Hierarchical dropdown menu with nested navigation, icons, and actions
 
 ### Action Components
 - **Button** - Interactive buttons with multiple variants and icons
