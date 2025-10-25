@@ -23,8 +23,9 @@ import { MultiSelectComponent } from './components/maxi/multi-select/multi-selec
 import { PaginatorComponent } from './components/maxi/paginator/paginator.component';
 import { CalendarComponent } from './components/maxi/calendar/calendar.component';
 import { TableComponent } from './components/maxi/table/table.component';
-import { TimelineComponent } from './components/maxi/timeline/timeline.component';
-
+import { TimelineComponent } from './components/maxi/timeline/timeline.component';  
+import { AccordionComponent } from './components/maxi/accordion/accordion.component';
+import { CascadeMenuComponent } from './components/maxi/cascade-menu/cascade-menu.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -54,6 +55,8 @@ import { TimelineComponent } from './components/maxi/timeline/timeline.component
     CalendarComponent,
     TableComponent,
     TimelineComponent,
+    AccordionComponent,
+    CascadeMenuComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
