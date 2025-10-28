@@ -126,6 +126,7 @@ export class AppModule { }
 - **Dropdown** - Select dropdown with search functionality
 - **Multi Select** - Multiple selection dropdown with tags
 - **Calendar** - Date picker with calendar interface
+- **InputOTP** - One-Time Password verification
 
 ### Navigation Components
 - **Tabs** - Tabbed interface for content organization
