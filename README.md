@@ -133,6 +133,7 @@ export class AppModule { }
 - **Sidebar** - Collapsible navigation sidebar
 - **Paginator** - Pagination controls for data navigation
 - **Cascade Menu** - Hierarchical dropdown menu with nested navigation, icons, and actions
+- **Menubar** - Horizontal navigation bar with dropdown menus and submenus
 
 ### Action Components
 - **Button** - Interactive buttons with multiple variants and icons
