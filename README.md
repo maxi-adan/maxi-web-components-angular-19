@@ -28,7 +28,7 @@
 
 ## 🚀 Overview
 
-**Maxi Web Components** is a comprehensive Angular components library designed to provide developers with a complete set of modern, accessible, and customizable UI components. Built specifically for Angular applications, this library offers a consistent design system and seamless integration with Angular's ecosystem.
+**Maxi Angular Components** is a comprehensive Angular components library designed to provide developers with a complete set of modern, accessible, and customizable UI components. Built specifically for Angular applications, this library offers a consistent design system and seamless integration with Angular's ecosystem.
 
 ### Key Highlights
 
@@ -145,6 +145,7 @@ export class AppModule { }
 - **Timeline** - Vertical timeline for events and progress
 - **Table** - Advanced table with sorting, filtering, and pagination
 - **Accordion** - Collapsible content sections with expand/collapse functionality and custom headers
+- **Carousel** - Interactive carousel for displaying multiple items with navigation
 
 ### Feedback Components
 - **Notification** - Toast notifications for user feedback
