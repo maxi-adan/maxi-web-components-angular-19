@@ -127,6 +127,7 @@ export class AppModule { }
 - **Multi Select** - Multiple selection dropdown with tags
 - **Calendar** - Date picker with calendar interface
 - **InputOTP** - One-Time Password verification
+- **ControlNumber**: Numeric control input for managing numeric values
 
 ### Navigation Components
 - **Tabs** - Tabbed interface for content organization
@@ -134,6 +135,8 @@ export class AppModule { }
 - **Paginator** - Pagination controls for data navigation
 - **Cascade Menu** - Hierarchical dropdown menu with nested navigation, icons, and actions
 - **Menubar** - Horizontal navigation bar with dropdown menus and submenus
+- **Breadcrumb**: Navigation breadcrumb trail showing current page location
+- **Steps**: Step-by-step navigation component - Click on each step to navigate
 
 ### Action Components
 - **Button** - Interactive buttons with multiple variants and icons
@@ -142,6 +145,7 @@ export class AppModule { }
 ### Display Components
 - **Card** - Content container with header, body, and footer
 - **Badge** - Small status indicators and labels
+- **Fieldset**: Grouped form fields with collapsible legend for organizing related inputs
 - **Timeline** - Vertical timeline for events and progress
 - **Table** - Advanced table with sorting, filtering, and pagination
 - **Accordion** - Collapsible content sections with expand/collapse functionality and custom headers
@@ -151,11 +155,13 @@ export class AppModule { }
 - **Notification** - Toast notifications for user feedback
 - **Tooltip** - Hover tooltips for additional information
 - **Dialog** - Modal dialogs for forms and confirmations
+- **Message**: Contextual messages for displaying different types of feedback with multiple variants
 
 ### State Components
 - **Preload** - Loading overlay for page transitions
 - **Skeleton** - Placeholder content while loading
 - **Spinner** - Animated loading spinner
+- **ProgressBar**: Progress indicator for showing completion status or loading state
 
 ## 🔧 Compatibility
 
