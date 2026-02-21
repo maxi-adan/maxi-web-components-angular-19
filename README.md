@@ -68,32 +68,24 @@ npm install @angular/common @angular/core @angular/forms
 ### 1. Import the Module
 
 ```typescript
-import { NgModule } from '@angular/core';
-import { MaxiComponentsModule } from 'maxi-angular-components';
+import { NgModule } from "@angular/core";
+import { MaxiComponentsModule } from "maxi-angular-components";
 
 @NgModule({
   imports: [MaxiComponentsModule],
   // ... other module configuration
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 ### 2. Use Components
 
 ```html
 <!-- Input Field -->
-<maxi-input-field 
-  [placeholder]="'Enter your name'"
-  [required]="true">
-</maxi-input-field>
+<maxi-input-field [placeholder]="'Enter your name'" [required]="true"> </maxi-input-field>
 
 <!-- Button -->
-<maxi-button 
-  [variant]="'primary'"
-  [size]="'medium'"
-  (click)="onSubmit()">
-  Submit
-</maxi-button>
+<maxi-button [variant]="'primary'" [size]="'medium'" (click)="onSubmit()"> Submit </maxi-button>
 
 <!-- Card -->
 <maxi-card [title]="'Sample Card'">
@@ -101,22 +93,16 @@ export class AppModule { }
 </maxi-card>
 
 <!-- Accordion -->
-<maxi-accordion 
-  [data]="accordionData"
-  [multiple]="true"
-  (tabChange)="handleTabChange($event)">
-</maxi-accordion>
+<maxi-accordion [data]="accordionData" [multiple]="true" (tabChange)="handleTabChange($event)"> </maxi-accordion>
 
 <!-- Cascade Menu -->
-<maxi-cascade-menu 
-  [data]="menuData"
-  [trigger]="'click'">
-</maxi-cascade-menu>
+<maxi-cascade-menu [data]="menuData" [trigger]="'click'"> </maxi-cascade-menu>
 ```
 
 ## 🧩 Components
 
 ### Input Components
+
 - **Input Field** - Text input with validation and styling options
 - **Input Number** - Numeric input with increment/decrement controls
 - **Input Switch** - Toggle switch for boolean values
@@ -128,8 +114,12 @@ export class AppModule { }
 - **Calendar** - Date picker with calendar interface
 - **InputOTP** - One-Time Password verification
 - **ControlNumber**: Numeric control input for managing numeric values
+- **Knob**: Circular dial control for selecting numeric values
+- **Input Password**: Password input with strength indicator and mask toggling
+- **Text Editor**: Rich text editor with formatting toolbar
 
 ### Navigation Components
+
 - **Tabs** - Tabbed interface for content organization
 - **Sidebar** - Collapsible navigation sidebar
 - **Paginator** - Pagination controls for data navigation
@@ -137,12 +127,16 @@ export class AppModule { }
 - **Menubar** - Horizontal navigation bar with dropdown menus and submenus
 - **Breadcrumb**: Navigation breadcrumb trail showing current page location
 - **Steps**: Step-by-step navigation component - Click on each step to navigate
+- **Popover**: Contextual popup component
 
 ### Action Components
+
 - **Button** - Interactive buttons with multiple variants and icons
 - **Chips** - Small tags for labels and selections
+- **Select Button**: Button-based selection component
 
 ### Display Components
+
 - **Card** - Content container with header, body, and footer
 - **Badge** - Small status indicators and labels
 - **Fieldset**: Grouped form fields with collapsible legend for organizing related inputs
@@ -150,14 +144,18 @@ export class AppModule { }
 - **Table** - Advanced table with sorting, filtering, and pagination
 - **Accordion** - Collapsible content sections with expand/collapse functionality and custom headers
 - **Carousel** - Interactive carousel for displaying multiple items with navigation
+- **Meter Group**: Visualize categorized data in a segmented bar
+- **Image**: Advanced image component with preview mode
 
 ### Feedback Components
+
 - **Notification** - Toast notifications for user feedback
 - **Tooltip** - Hover tooltips for additional information
 - **Dialog** - Modal dialogs for forms and confirmations
 - **Message**: Contextual messages for displaying different types of feedback with multiple variants
 
 ### State Components
+
 - **Preload** - Loading overlay for page transitions
 - **Skeleton** - Placeholder content while loading
 - **Spinner** - Animated loading spinner
@@ -165,11 +163,11 @@ export class AppModule { }
 
 ## 🔧 Compatibility
 
-| Angular Version | Library Version | Status |
-|----------------|-----------------|--------|
-| 18.x           | 4.0.12+         | ✅ Supported |
-| 19.x           | 4.0.12+         | ✅ Supported |
-| 20.x           | 4.0.12+         | ✅ Supported |
+| Angular Version | Library Version | Status       |
+| --------------- | --------------- | ------------ |
+| 18.x            | 4.0.12+         | ✅ Supported |
+| 19.x            | 4.0.12+         | ✅ Supported |
+| 20.x            | 4.0.12+         | ✅ Supported |
 
 ### Browser Support
 
@@ -182,24 +180,27 @@ export class AppModule { }
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - Angular CLI 19+
 - npm or yarn
 
 ### Setup
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd maxi-angular-components-test
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm start
 ```

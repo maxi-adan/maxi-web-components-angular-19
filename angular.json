@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "maxi-web-components/global.css"
+              "maxi-web-components/global-zeclio.css"
             ],
             "scripts": []
           },
