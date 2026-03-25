@@ -42,6 +42,8 @@ import { SelectButtonComponent } from './components/maxi/select-button/select-bu
 import { ImageComponent } from './components/maxi/image/image.component';
 import { PopoverComponent } from './components/maxi/popover/popover.component';
 import { MeterGroupComponent } from './components/maxi/meter-group/meter-group.component';
+import { IconComponent } from './components/maxi/icon/icon.component';
+import { ChartComponent } from './components/maxi/chart/chart.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -88,7 +90,9 @@ import { MeterGroupComponent } from './components/maxi/meter-group/meter-group.c
     SelectButtonComponent,
     ImageComponent,
     PopoverComponent,
-    MeterGroupComponent
+    MeterGroupComponent,
+    IconComponent,
+    ChartComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
