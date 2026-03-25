@@ -41,7 +41,7 @@
 
 ## ✨ Features
 
-- 🎨 **27+ Components** covering all major UI patterns
+- 🎨 **29+ Components** covering all major UI patterns
 - 📱 **Responsive Design** - Mobile-first approach
 - ♿ **Accessibility** - WCAG 2.1 AA compliant
 - 🎯 **TypeScript** - Full type safety and IntelliSense support
@@ -146,6 +146,8 @@ export class AppModule {}
 - **Carousel** - Interactive carousel for displaying multiple items with navigation
 - **Meter Group**: Visualize categorized data in a segmented bar
 - **Image**: Advanced image component with preview mode
+- **Chart**: Interactive charts with multiple types (bar, line, pie, doughnut, radar, bubble, polar, scatter, mixed) and animation support
+- **Icon**: Scalable icons with size and color customization
 
 ### Feedback Components
 
